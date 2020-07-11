@@ -13,6 +13,7 @@
 		372985AC24BA53B800507461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372985AA24BA53B800507461 /* Main.storyboard */; };
 		372985AE24BA53B900507461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372985AD24BA53B900507461 /* Assets.xcassets */; };
 		372985B124BA53B900507461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372985AF24BA53B900507461 /* LaunchScreen.storyboard */; };
+		372985B924BA53FD00507461 /* HouseSalesInCA.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 372985B824BA53FD00507461 /* HouseSalesInCA.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		372985AD24BA53B900507461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		372985B024BA53B900507461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		372985B224BA53B900507461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		372985B824BA53FD00507461 /* HouseSalesInCA.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HouseSalesInCA.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				372985AD24BA53B900507461 /* Assets.xcassets */,
 				372985AF24BA53B900507461 /* LaunchScreen.storyboard */,
 				372985B224BA53B900507461 /* Info.plist */,
+				372985B824BA53FD00507461 /* HouseSalesInCA.mlmodel */,
 			);
 			path = HouseSalesCoreML;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				372985A924BA53B800507461 /* ViewController.swift in Sources */,
+				372985B924BA53FD00507461 /* HouseSalesInCA.mlmodel in Sources */,
 				372985A524BA53B800507461 /* AppDelegate.swift in Sources */,
 				372985A724BA53B800507461 /* SceneDelegate.swift in Sources */,
 			);

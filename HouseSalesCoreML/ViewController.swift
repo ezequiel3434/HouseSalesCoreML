@@ -12,7 +12,23 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        predecirPrecioDeCasa(banios: 2, cuartos: 4, piesCuadrados: 1200)
+    }
+    
+    func predecirPrecioDeCasa(banios: Double, cuartos: Double, piesCuadrados: Double) -> Double{
+        
+        
+        let houseSales = HouseSalesInCA()
+        
+        guard let precio = try? houseSales.prediction(Bedrooms: cuartos, Bathrooms: banios, Size: piesCuadrados) else {
+            print("ha ocurrido un error")
+            
+            return 0.0
+        }
+        
+        print(precio.Price)
+        
+        return precio.Price
     }
 
 
