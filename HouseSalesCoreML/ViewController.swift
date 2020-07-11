@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var precioDeLaCasa: UILabel!
+    @IBOutlet weak var roomsNumber: UILabel!
+    @IBOutlet weak var roomsBathrooms: UILabel!
+    @IBOutlet weak var piesCuadrados: UILabel!
+    
+    // Sliders
+    @IBOutlet weak var roomsSlider: UISlider!
+    @IBOutlet weak var bathroomSlider: UISlider!
+    @IBOutlet weak var feetSlider: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
-        predecirPrecioDeCasa(banios: 2, cuartos: 4, piesCuadrados: 1200)
+        
     }
     
     func predecirPrecioDeCasa(banios: Double, cuartos: Double, piesCuadrados: Double) -> Double{
@@ -31,6 +40,23 @@ class ViewController: UIViewController {
         return precio.Price
     }
 
+    @IBAction func cambiarValores(_ sender: Any) {
+      
+        
+        let rooms = Int(roomsSlider.value)
+        let bathrooms = Int(bathroomSlider.value)
+        let feets = Int(feetSlider.value)
+        
+        roomsNumber.text = "\(rooms) Dormitorios"
+        roomsBathrooms.text = "\(bathrooms) Baños"
+        piesCuadrados.text = "\(feets) pies cuadrados"
+        
+        let housePrice = predecirPrecioDeCasa(banios: Double(bathrooms), cuartos: Double(rooms), piesCuadrados: Double(feets))
+        precioDeLaCasa.text = "Costo del propiedad es $\(Int(housePrice))"
+        
 
+        
+    }
+    
 }
 
