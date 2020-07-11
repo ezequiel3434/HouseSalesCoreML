@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         piesCuadrados.text = "\(feets) pies cuadrados"
         
         let housePrice = predecirPrecioDeCasa(banios: Double(bathrooms), cuartos: Double(rooms), piesCuadrados: Double(feets))
-        precioDeLaCasa.text = "Costo del propiedad es $\(Int(housePrice))"
+        precioDeLaCasa.text = "Costo de la propiedad: $\(Int(housePrice))"
         
 
         
