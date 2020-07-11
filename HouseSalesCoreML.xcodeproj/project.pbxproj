@@ -14,6 +14,7 @@
 		372985AE24BA53B900507461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372985AD24BA53B900507461 /* Assets.xcassets */; };
 		372985B124BA53B900507461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372985AF24BA53B900507461 /* LaunchScreen.storyboard */; };
 		372985B924BA53FD00507461 /* HouseSalesInCA.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 372985B824BA53FD00507461 /* HouseSalesInCA.mlmodel */; };
+		372985BB24BA64D200507461 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 372985BA24BA64D200507461 /* images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		372985B024BA53B900507461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		372985B224BA53B900507461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		372985B824BA53FD00507461 /* HouseSalesInCA.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HouseSalesInCA.mlmodel; sourceTree = "<group>"; };
+		372985BA24BA64D200507461 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			children = (
 				372985A324BA53B800507461 /* HouseSalesCoreML */,
 				372985A224BA53B800507461 /* Products */,
+				372985BA24BA64D200507461 /* images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				372985BB24BA64D200507461 /* images in Resources */,
 				372985B124BA53B900507461 /* LaunchScreen.storyboard in Resources */,
 				372985AE24BA53B900507461 /* Assets.xcassets in Resources */,
 				372985AC24BA53B800507461 /* Main.storyboard in Resources */,
